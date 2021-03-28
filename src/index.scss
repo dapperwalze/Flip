@@ -1,0 +1,227 @@
+$primaryBackgroundColor: #f3f7f9;
+$secondaryBackgroundColor: #fff;
+$fontFamily: "Lato", sans-serif;
+$BaseFontSize: 16px;
+$primaryTextColor: #000;
+$secondaryTextColor: #fff;
+$eventSuccessColor: #56b586;
+$eventAlertColor: #fd6542;
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background-color: $primaryBackgroundColor;
+  font-family: $fontFamily;
+  font-size: $BaseFontSize;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.transactionDisplayCard {
+  width: 100%;
+  max-width: 500px;
+  min-height: 450px;
+  background-color: $primaryBackgroundColor;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.appHeader {
+  text-align: center;
+  font-family: $fontFamily;
+  font-size: 2.2rem;
+  font-weight: normal;
+  color: #606060;
+}
+.welcomeGreeting {
+  font-family: $fontFamily;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: $primaryTextColor;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-left: 12px;
+}
+.transactionInfo {
+  font-family: $fontFamily;
+  font-size: 1rem;
+  font-weight: 400;
+  color: $primaryTextColor;
+  margin: 5px 0 0 0;
+  padding: 0 0 0 12px;
+  line-height: 150%;
+}
+.totalTransactionAmount {
+  color: $eventAlertColor;
+  font-family: $fontFamily;
+  font-size: 1.05rem;
+  font-weight: 400;
+  margin: 5px 0 0 0;
+  padding: 0px;
+  line-height: 150%;
+}
+.searchBox {
+  width: inherit;
+  max-width: inherit;
+  height: 45px;
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+form {
+  display: flex;
+}
+.searchIcon {
+  position: absolute;
+  bottom: 9px;
+  margin-left: 10px;
+}
+.searchField {
+  height: 45px;
+  border: 1px solid #999;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  outline: none;
+  font-family: $fontFamily;
+  font-size: 1rem;
+  font-weight: 400;
+  color: $primaryTextColor;
+  padding: 5px 5px 5px 45px;
+  flex: 2;
+}
+.filterOptions {
+  flex: 1;
+  height: 45px;
+  outline: none;
+  padding: 10px;
+  border: 1px solid #999;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-family: $fontFamily;
+  font-size: 1rem;
+  font-weight: 400;
+  color: $primaryTextColor;
+  text-align: center;
+}
+.transactionLink {
+  text-decoration: none;
+}
+.transactionItem {
+  background-color: $secondaryBackgroundColor;
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border-left: 4px solid $eventSuccessColor;
+}
+
+.transactionDetails {
+  flex: 2;
+}
+.acountName {
+  text-transform: uppercase;
+}
+.transactionStatus {
+  background-color: $eventSuccessColor;
+  font-family: $fontFamily;
+  font-size: 1rem;
+  font-weight: 400;
+  color: $secondaryTextColor;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.transactingBanks,
+.accountName,
+.amountAndTime {
+  font-family: $fontFamily;
+  font-size: 0.9rem;
+  line-height: 20px;
+  color: $primaryTextColor;
+  margin: 0px 0px 3px 0px;
+}
+.accountName,
+.amountAndTime {
+  font-weight: 300px;
+  color: #606060;
+}
+.transactingBanks,
+.accountName {
+  text-transform: uppercase;
+}
+.transactionStatus > h5 {
+  margin: 0;
+  text-transform: lowercase;
+}
+.transactionStatus > h5::first-letter {
+  text-transform: uppercase;
+}
+.hmtlEntity {
+  color: #000 !important;
+}
+.transactionDetailsSubHeader {
+  display: flex;
+  align-items: center;
+  background-color: $secondaryBackgroundColor;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.transactionId {
+  font-family: $fontFamily;
+  font-size: 0.9rem;
+  line-height: 20px;
+  color: $primaryTextColor;
+  margin: 0px 0px 3px 0px;
+}
+.transactionSummary {
+  background-color: $secondaryBackgroundColor;
+  padding: 15px;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.transactionSummary div {
+  padding: 10px;
+}
+
+.summaryDetails {
+  flex: 2;
+}
+
+.summarySubHeaders,
+.info {
+  font-family: $fontFamily;
+  font-size: 0.9rem;
+  line-height: 20px;
+  color: $primaryTextColor;
+  margin: 0px 0px 3px 0px;
+}
+.info {
+  font-family: $fontFamily;
+  font-size: 0.8rem;
+  line-height: 18px;
+  color: #606060;
+}
+.bankName,
+.dataRemark,
+.beneficiaryName {
+  text-transform: capitalize;
+}
+
+.backButton {
+  background-color: $secondaryBackgroundColor;
+  color: $eventAlertColor;
+  font-family: $fontFamily;
+  font-size: 0.9rem;
+  line-height: 20px;
+  border: 1px solid $eventAlertColor;
+  border-radius: 4px;
+  margin-top: 10px;
+  cursor: pointer;
+  outline: none;
+}
