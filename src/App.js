@@ -50,7 +50,6 @@ function App() {
   let handleSorting = useCallback(
     (e) => {
       const value = e.target.value.toLowerCase();
-
       const filteredValue =
         value === "a-z"
           ? sortTransactionFromAToZ(transactionResults)
@@ -81,7 +80,7 @@ function App() {
             <SearchBar
               value={value}
               handleChange={(e) => handleChange(e)}
-              handleFilter={(e) => handleSorting(e)}
+              handleSorting={(e) => handleSorting(e)}
             />
 
             {transactionResults.map((transaction) => {
